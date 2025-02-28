@@ -73,8 +73,8 @@ a {
 .intro {
     display: flex;
     align-items: center;
-    height: 100%;
-    padding: 60px 9% 0;
+    min-height: 60vh; /* Reduce height */
+    padding: 20px 9% 0; /* Reduce padding */
     color: #fff;
 }
 
@@ -180,12 +180,13 @@ a {
 /* Project Layout */
 .projects {
     background: #452c63;
-    padding: 60px 0;
+    padding: 0px;
 }
 
 .heading{
     text-align: center;
     color: #fff;
+    font-size: large;
 }
 
 .projects-container {
@@ -196,6 +197,8 @@ a {
     color: #fff;
     justify-content: space-between;
     column-gap: 20px;
+    flex-wrap: wrap;
+    row-gap: 10px;
     
 }
   
@@ -204,7 +207,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 320px;
+    width: 100%;
+    max-width: 375px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     padding: 32px;
     overflow: hidden;
@@ -223,12 +227,12 @@ a {
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
-  .proj.desc{
+  .proj-desc{
     font-weight: 700;
-    font-size: 32px;
+    font-size: 18px;
   }
   
-  .proj.desc {
+  .proj-desc {
     line-height: 1.5;
   }
   
@@ -239,14 +243,14 @@ a {
     font-weight: 600;
     border: none;
     cursor: pointer;
-    background: #0974f1;
+    background: purple;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
   
   .project:hover {
-    box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
-    border-color: #0974f1;
+    box-shadow: 0 0 20px rgba(207, 113, 224, 0.8);
+    border-color: purple;
   }
   
   .proj-btn:hover {
